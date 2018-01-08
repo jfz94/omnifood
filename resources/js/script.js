@@ -79,4 +79,21 @@ $(document).ready(function(){
             icon.removeClass('ion-close-round');
         }
     });
+    
+    /* Maps */
+    var map = new GMaps({
+        div: '.map',
+        lat: 52.5215564,
+        lng: 13.408959,
+        zoom: 11
+    });
+    
+    map.addMarker({
+      lat: 52.5215564,
+      lng: 13.408959,
+      title: 'Berlin',
+      infoWindow: {
+          content: '<p>Our Berlin HQ</p>'
+      }
+});
 });
